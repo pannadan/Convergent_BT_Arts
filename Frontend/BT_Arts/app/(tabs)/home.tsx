@@ -319,7 +319,7 @@ const mapJson = [
 ]
 
 
-export default function TabOneScreen() {
+export default function home() {
   const [count, setCount] = useState(0);
 
 const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
@@ -381,7 +381,6 @@ const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
             <Button title="Take Snapshot and Share" onPress={takeSnapshotAndShare} />
           </Callout>
         </Marker>
-        <Text style={styles.mapOverlay}>Hi</Text>
       </MapView>
       <StatusBar style="auto" />
     </View>
