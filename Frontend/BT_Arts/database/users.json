@@ -1,0 +1,28 @@
+{
+    "users": {
+        "user1" : {
+            "username" : "saddleUser",
+            "password": "saddleUp",
+            "status" : "Austinite",
+            "locations" : ["Cabo Bob's", "Matt's El Rancho", "Capitol Building"]
+        }, 
+        "user2" : {
+            "username" : "bigCowboy",
+            "password" : "saddleUp",
+            "status" : "Transplant",
+            "locations" : ["UT Tower"]
+        }, 
+        "user3" : {
+            "username" : "rancherJoe",
+            "password" : "saddleUp",
+            "status" : "Explorer",
+            "locations" : ["Cabo Bob's", "UT Tower", "Ramen Tatsu-ya"]
+        },
+        "user4" : {
+            "username" : "utStudent",
+            "password" : "saddleUp",
+            "status" : "Student",
+            "locations" : ["UT Tower", "Blanton Museum", "Pease Park", "Bob Bullock Museum"]
+        }
+    }
+}
