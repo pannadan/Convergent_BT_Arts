@@ -1,28 +1,19 @@
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import MapView, { Callout, Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import SlidingUpPanel from 'rn-sliding-up-panel';
+import LocationInfoItem from '@/components/LocationInfoItem';
+import locations from '@/assets/data/locations.json';
+import CustomMarker from '@/components/CustomMarker';
+import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+//import Card from '../../components/Card';
 
 
-let locationsOfInterest = [
-  {
-    title: "First",
-    location: {
-      latitude: 30,
-      longitude: -97
-    },
-    description: "My First Marker"
-  },
-  {
-    title: "Second",
-    location: {
-      latitude: 31,
-      longitude: -97
-    },
-    description: "My Second Marker"
-  }
-]
+
+
 
 const mapJson = [
   {
@@ -321,38 +312,24 @@ const mapJson = [
 
 export default function TabOneScreen() {
   const [count, setCount] = useState(0);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+  const snapPoints = useMemo(() => ['25%', '50%'], []);
 
-const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
-  longitude: -97.7386,
-  latitude: 30.2629
-});
+  const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
+    longitude: -97.7386,
+    latitude: 30.2629
+  });
 
 
-  const showLocationsOfInterest = () => {
-    return locationsOfInterest.map((item, index) => {
-      return (
-        <Marker 
-          key={index}
-          coordinate={item.location}
-          title={item.title}
-          description={item.description}
-        />
-      )
-    });
-  };
 
-  const mapRef = useRef();
 
-  const takeSnapshotAndShare = async () => {
-    const snapshot = await mapRef.current.takeSnapshotAndShare({width:300, height: 300, result: 'base64'});
-    console.log(snapshot)
-  };
+  
 
   return (
     <View style={styles.container}>
       <MapView 
         provider={PROVIDER_GOOGLE}
-        ref={mapRef}
+        //ref={mapRef}
         style={styles.map}
         initialRegion={{
           "latitude": 30.282976196783498, 
@@ -362,27 +339,35 @@ const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
         }}
         customMapStyle={mapJson}
       >
-        {showLocationsOfInterest()}
-        <Marker 
-          draggable
-          pinColor='#0000ff'
-          coordinate={draggableMarkerCoord}
-          onDragEnd={(e) => setDraggableMarkerCoord(e.nativeEvent.coordinate)}
-        />
+      
         
+      
 
-        <Marker
-          pinColor='#00FF00'
-          coordinate={{ latitude: 30.2, longitude: -97.7}}
-        >
-          <Callout>
-            <Text>Count:{count}</Text>
-            <Button title='Increment Count' onPress={() => setCount(count+1)} />
-            <Button title="Take Snapshot and Share" onPress={takeSnapshotAndShare} />
-          </Callout>
-        </Marker>
-        <Text style={styles.mapOverlay}>Hi</Text>
+        {locations.map((location) => (
+          <CustomMarker 
+            key={location.id} 
+            location={location} 
+            onPress={() => setSelectedLocation(location)} 
+          />
+        ))}
+
       </MapView>
+      {/*Display selected location */}
+      {selectedLocation && <LocationInfoItem location={selectedLocation}/>}
+
+      <GestureHandlerRootView>
+        <BottomSheet
+          index={1}
+          snapPoints={snapPoints}
+          //onChange={handleSheetChanges}
+        >
+          <BottomSheetView>
+            <Text>yur</Text>
+          </BottomSheetView>
+        </BottomSheet>
+      </GestureHandlerRootView>    
+      
+
       <StatusBar style="auto" />
     </View>
   );
