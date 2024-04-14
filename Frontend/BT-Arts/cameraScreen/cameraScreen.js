@@ -1,58 +1,3 @@
-// import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View } from 'react-native';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import { Camera, CameraType} from 'expo-camera';
-// import { shareAsync } from 'expo-sharing';
-// import * as MediaLibrary from 'expo-media-library';
-// import { Button, TouchableOpacity } from 'react-native';
-// import { useEffect, useRef, useState } from 'react';
-
-
-// import LoginScreen from './screens/LoginScreen';
-// import HomeScreen from './screens/HomeScreen';
-// import CameraAppTutorial from './CameraAppTutorial/App.js';
-
-// const Stack = createNativeStackNavigator();
-// const [hasCameraPermission, setHasCameraPermission] = useState();
-// const [hasMediaLibraryPermission, setHasMediaLibraryPermission] = useState();
-// const [Type, setType] = useState(CameraType.back);
-
-// export default function App() {
-//   return (
-//     // <NavigationContainer>
-//     //   <Stack.Navigator>
-//     //     {/* <Stack.Screen options ={{headerShown: false}} name="Login" component={LoginScreen} /> */}
-//     //     {/* <Stack.Screen name="cameraScreen" component={CameraScreen} /> */}
-//     //     <Camera style={styles.container} ref={cameraRef}>
-//     //     <View style={styles.buttonContainer}>
-//     //     <Button title="Take Pic" onPress={takePic} />
-//     //     </View>
-//     //     <StatusBar style="auto" />
-//     //   </Camera>
-//     //     {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
-//     //   </Stack.Navigator>
-//     // </NavigationContainer>
-//     <View style={styles.container}>
-//       <Camera style={styles.camera} type={type}>
-//         <View style={styles.buttonContainer}>
-//           <TouchableOpacity style={styles.button} onPress={toggleCameraType}>
-//             <Text style={styles.text}>Flip Camera</Text>
-//           </TouchableOpacity>
-//         </View>
-//       </Camera>
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, Button, Image } from 'react-native';
 import { useEffect, useRef, useState } from 'react';
@@ -60,7 +5,7 @@ import { Camera } from 'expo-camera';
 import { shareAsync } from 'expo-sharing';
 import * as MediaLibrary from 'expo-media-library';
 
-export default function App() {
+export function App() {
   let cameraRef = useRef();
   const [hasCameraPermission, setHasCameraPermission] = useState();
   const [hasMediaLibraryPermission, setHasMediaLibraryPermission] = useState();
@@ -133,7 +78,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     backgroundColor: '#fff',
-    alignSelf: 'center'
+    alignSelf: 'flex-end'
   },
   preview: {
     alignSelf: 'stretch',
