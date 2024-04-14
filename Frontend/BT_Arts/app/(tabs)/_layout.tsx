@@ -67,6 +67,7 @@ export default function TabLayout() {
         options={{
           title: 'Me',
           tabBarIcon: ({ color }) => <TabBarIcon2 name="hat-cowboy" color={color} />,
+          headerShown: false,
         }}
       />
     </Tabs>
