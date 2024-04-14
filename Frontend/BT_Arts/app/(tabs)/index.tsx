@@ -8,7 +8,7 @@ import LocationInfoItem from '@/components/LocationInfoItem';
 import locations from '@/assets/data/locations.json';
 import CustomMarker from '@/components/CustomMarker';
 import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Gesture, GestureHandlerRootView } from 'react-native-gesture-handler';
 //import Card from '../../components/Card';
 
 
@@ -313,20 +313,22 @@ const mapJson = [
 export default function TabOneScreen() {
   const [count, setCount] = useState(0);
   const [selectedLocation, setSelectedLocation] = useState(null);
-  const snapPoints = useMemo(() => ['25%', '50%'], []);
+  const snapPoints = useMemo(() => ['25%', '50%', '70%'], []);
 
   const [draggableMarkerCoord, setDraggableMarkerCoord] = useState({
     longitude: -97.7386,
     latitude: 30.2629
   });
 
-
-
-
-  
-
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
+      <View style={styles.bottomSheet}>
+        <BottomSheet index={1} snapPoints={snapPoints}>
+          <View>
+            <Text>yo wtf</Text>
+          </View>
+        </BottomSheet>
+      </View>
       <MapView 
         provider={PROVIDER_GOOGLE}
         //ref={mapRef}
@@ -339,10 +341,6 @@ export default function TabOneScreen() {
         }}
         customMapStyle={mapJson}
       >
-      
-        
-      
-
         {locations.map((location) => (
           <CustomMarker 
             key={location.id} 
@@ -352,24 +350,24 @@ export default function TabOneScreen() {
         ))}
 
       </MapView>
+      
       {/*Display selected location */}
       {selectedLocation && <LocationInfoItem location={selectedLocation}/>}
-
-      <GestureHandlerRootView>
-        <BottomSheet
-          index={1}
-          snapPoints={snapPoints}
-          //onChange={handleSheetChanges}
-        >
-          <BottomSheetView>
-            <Text>yur</Text>
-          </BottomSheetView>
-        </BottomSheet>
-      </GestureHandlerRootView>    
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
       
 
       <StatusBar style="auto" />
-    </View>
+    </GestureHandlerRootView>
+    
   );
 }
 
@@ -394,5 +392,12 @@ const styles = StyleSheet.create({
     left: "25%",
     width: "50%",
     textAlign: "center"
-  }
+  },
+  bottomSheet: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1,
+  },
 });

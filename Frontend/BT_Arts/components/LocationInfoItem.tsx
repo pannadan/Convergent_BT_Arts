@@ -1,17 +1,33 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native';
+import { Icon } from 'react-native-elements';
+import { ScrollView } from 'react-native-gesture-handler';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
+
 import React from 'react'
 
 const LocationInfoItem = ({location}) => {
   return (
     <View style={styles.card}> 
-        <Image  source={{ uri: location.image }} style={styles.image} />
-        <View style={styles.rightContainer}>
+        <View style={styles.title}>
             <Text>{location.title}</Text>
-            <View style={styles.footer}>
-                <Text>{location.longitude} </Text>
-                <Text>{location.latitude}</Text>
+        </View>
+        <View style={styles.icons}>
+            <Text>Find Groups</Text>
+            <FontAwesome name='building' color="green" size={24} />
+            <FontAwesome name='camera' color="grey" size={24} />
+
+        </View>
+        <View style={styles.locationInfo}>
+            <Image source={{ uri: location.image }} style={styles.image} />
+            <View style={styles.rightContainer}>
+                <Text>This is information about the location!</Text>
+                <View style={styles.footer}>
+                    <Text>{location.longitude} </Text>
+                    <Text>{location.latitude}</Text>
+                </View>
             </View>
         </View>
+        
     </View>
   )
 }
@@ -26,11 +42,18 @@ const styles = StyleSheet.create({
         right: 10, 
         borderRadius: 20,
 
-        flexDirection: 'row'
+        flexDirection: 'column'
         
     },
-    title: {
+    icons: {
+        flexDirection: 'row',
+        margin: 10,
+        justifyContent: 'space-between',
 
+    },
+    title: {
+        margin: 0,
+        textAlign: 'center',
     },
     image: {
         width: 150,
@@ -47,6 +70,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between', //!!! THIS NOT WORKING
         marginTop: 'auto',
+    },
+    locationInfo: {
+        flexDirection: 'row',
     }
 })
 

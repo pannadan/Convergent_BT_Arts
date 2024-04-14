@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "group_party_name": "Ethan's Party",
+      "date_time": "2024-04-15 10:00 AM",
+      "number_of_people": 4,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 2,
+      "group_party_name": "Ava's Party",
+      "date_time": "2024-04-15 11:30 AM",
+      "number_of_people": 6,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 3,
+      "group_party_name": "Jackson's Party",
+      "date_time": "2024-04-15 01:00 PM",
+      "number_of_people": 3,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 4,
+      "group_party_name": "Mia's Party",
+      "date_time": "2024-04-15 02:30 PM",
+      "number_of_people": 5,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 5,
+      "group_party_name": "Noah's Party",
+      "date_time": "2024-04-15 04:00 PM",
+      "number_of_people": 7,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 6,
+      "group_party_name": "Isabella's Party",
+      "date_time": "2024-04-15 05:30 PM",
+      "number_of_people": 4,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 7,
+      "group_party_name": "Liam's Party",
+      "date_time": "2024-04-15 07:00 PM",
+      "number_of_people": 2,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 8,
+      "group_party_name": "Sophia's Party",
+      "date_time": "2024-04-16 09:00 AM",
+      "number_of_people": 8,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 9,
+      "group_party_name": "Jacob's Party",
+      "date_time": "2024-04-16 10:30 AM",
+      "number_of_people": 3,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 10,
+      "group_party_name": "Emma's Party",
+      "date_time": "2024-04-16 12:00 PM",
+      "number_of_people": 6,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 11,
+      "group_party_name": "Michael's Party",
+      "date_time": "2024-04-16 01:30 PM",
+      "number_of_people": 5,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 12,
+      "group_party_name": "Olivia's Party",
+      "date_time": "2024-04-16 03:00 PM",
+      "number_of_people": 7,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 13,
+      "group_party_name": "William's Party",
+      "date_time": "2024-04-16 04:30 PM",
+      "number_of_people": 4,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 14,
+      "group_party_name": "Ava's Party",
+      "date_time": "2024-04-16 06:00 PM",
+      "number_of_people": 3,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 15,
+      "group_party_name": "James's Party",
+      "date_time": "2024-04-17 10:00 AM",
+      "number_of_people": 6,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 16,
+      "group_party_name": "Charlotte's Party",
+      "date_time": "2024-04-17 11:30 AM",
+      "number_of_people": 2,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 17,
+      "group_party_name": "Logan's Party",
+      "date_time": "2024-04-17 01:00 PM",
+      "number_of_people": 5,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 18,
+      "group_party_name": "Amelia's Party",
+      "date_time": "2024-04-17 02:30 PM",
+      "number_of_people": 4,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 19,
+      "group_party_name": "Benjamin's Party",
+      "date_time": "2024-04-17 04:00 PM",
+      "number_of_people": 3,
+      "profile_icon": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 20,
+      "group_party_name": "Harper's Party",
+      "date_time": "2024-04-17 05:30 PM",
+      "number_of_people": 7,
+      "profile_icon": "https://via.placeholder.com/100"
+    }
+  ]
+  
