@@ -26,12 +26,12 @@ export default function groups() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white',
+        backgroundColor: '#F6ECDC',
         flex: 1,
         flexDirection: 'column',
     },
     partyList: {
-        marginBottom: 30,
+        marginVertical: 10,
         marginHorizontal: 10,
         flex: 1,
     },

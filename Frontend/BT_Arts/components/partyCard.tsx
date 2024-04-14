@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, Button } from 'react-native'
 import React from 'react'
 import { FlipInEasyX } from 'react-native-reanimated'
 
@@ -13,6 +13,7 @@ const PartyCard = ({parties}) => {
         <View style={styles.rightbox}>
             <Text>{parties.date_time}</Text>
         </View>
+        <Button title="Join" />
     </View>
   )
 }
@@ -22,6 +23,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        borderWidth: 2,
+        borderRadius: 6,
+        borderColor: '#DFC8B0',
+        padding: 10
     },
     image: {
         width: 50,
@@ -37,7 +42,8 @@ const styles = StyleSheet.create({
 
     },
     rightbox: {
-
+        width: 100,
+        alignItems: 'flex-end',
     }
 })
 
