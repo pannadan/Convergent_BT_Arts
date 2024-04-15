@@ -108,11 +108,9 @@ export default function App() {
     return (
       <SafeAreaView style={styles.container}>
         <Image style={styles.preview} source={{ uri: "data:image/jpg;base64," + photo.base64 }} />
-        {/* <View style={styles.buttonContainer}> */}
-          <Button title="Share" onPress={sharePic} />
-          {hasMediaLibraryPermission ? <Button title="Save" onPress={savePhoto} /> : undefined}
-          <Button title="Discard" onPress={() => setPhoto(undefined)} />
-        {/* </View> */}
+        <Button title="Share" onPress={sharePic} />
+        {hasMediaLibraryPermission ? <Button title="Save" onPress={savePhoto} /> : undefined}
+        <Button title="Discard" onPress={() => setPhoto(undefined)} />
       </SafeAreaView>
     );
   }
