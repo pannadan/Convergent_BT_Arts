@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "latitude": 30.2672,
+      "longitude": -97.7431,
+      "title": "Texas State Capitol",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 2,
+      "latitude": 30.2747,
+      "longitude": -97.7404,
+      "title": "The University of Texas at Austin",
+      "image": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 3,
+      "latitude": 30.2649,
+      "longitude": -97.7479,
+      "title": "Lady Bird Lake",
+      "image": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 4,
+      "latitude": 30.2715,
+      "longitude": -97.7412,
+      "title": "6th Street",
+      "image": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 5,
+      "latitude": 30.2690,
+      "longitude": -97.7493,
+      "title": "Zilker Park",
+      "image": "https://via.placeholder.com/300"
+    }
+  ]
+  
