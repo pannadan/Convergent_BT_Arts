@@ -108,9 +108,11 @@ export default function App() {
     return (
       <SafeAreaView style={styles.container}>
         <Image style={styles.preview} source={{ uri: "data:image/jpg;base64," + photo.base64 }} />
-        <Button title="Share" onPress={sharePic} />
-        {hasMediaLibraryPermission ? <Button title="Save" onPress={savePhoto} /> : undefined}
-        <Button title="Discard" onPress={() => setPhoto(undefined)} />
+        {/* <View style={styles.buttonContainer}> */}
+          <Button title="Share" onPress={sharePic} />
+          {hasMediaLibraryPermission ? <Button title="Save" onPress={savePhoto} /> : undefined}
+          <Button title="Discard" onPress={() => setPhoto(undefined)} />
+        {/* </View> */}
       </SafeAreaView>
     );
   }
@@ -118,7 +120,7 @@ export default function App() {
   return (
     <Camera style={styles.container} ref={cameraRef}>
       <View style={styles.buttonContainer}>
-        <Button title="Take Pic" onPress={takePic} />
+        <Button title="Take Pic" color="#fff" onPress={takePic} />
       </View>
       <StatusBar style="auto" />
     </Camera>
@@ -128,11 +130,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
   },
   buttonContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: '#F99245',
+    bottom: 30,
+    zIndex:1,
+    height: 80,
+    width: 80,
+    borderRadius: 40,
     alignSelf: 'center'
   },
   preview: {
