@@ -7,7 +7,6 @@ import LocationInfoItem from '@/components/LocationInfoItem';
 import locations from '@/assets/data/locations.json';
 import CustomMarker from '@/components/CustomMarker';
 import { useNavigation } from '@react-navigation/native';
-import { Gesture, GestureHandlerRootView } from 'react-native-gesture-handler';
 //import Card from '../../components/Card';
 
 
@@ -59,15 +58,6 @@ const mapJson = [
   },
   {
     "featureType": "administrative.land_parcel",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
     "elementType": "labels.text.fill",
     "stylers": [
       {
@@ -95,27 +85,10 @@ const mapJson = [
   },
   {
     "featureType": "poi",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
     "elementType": "labels.text.fill",
     "stylers": [
       {
         "color": "#93817c"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.business",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -143,15 +116,6 @@ const mapJson = [
     "stylers": [
       {
         "color": "#f5f1e6"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -228,27 +192,10 @@ const mapJson = [
   },
   {
     "featureType": "road.local",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
     "elementType": "labels.text.fill",
     "stylers": [
       {
         "color": "#806b63"
-      }
-    ]
-  },
-  {
-    "featureType": "transit",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -309,7 +256,7 @@ const mapJson = [
 ]
 
 
-export default function TabOneScreen() {
+export default function Home() {
   const [count, setCount] = useState(0);
   const [selectedLocation, setSelectedLocation] = useState(null);
   const snapPoints = useMemo(() => ['25%', '50%', '70%'], []);

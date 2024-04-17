@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '@/app/(tabs)/home';  // Adjust the import path as needed
-import Groups from '@/app/(tabs)/groups';  // Adjust the import path as needed
+import Home from '@/app/(homeStackScreens)/homeStackScreens/home';  // Adjust the import path as needed
+import Groups from '@/app/(homeStackScreens)/homeStackScreens/groups';  // Adjust the import path as needed
 
 const Stack = createNativeStackNavigator();
 
