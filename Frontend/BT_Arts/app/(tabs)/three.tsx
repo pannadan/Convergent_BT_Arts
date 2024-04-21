@@ -3,29 +3,57 @@ import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 import { SafeAreaView} from 'react-native-safe-area-context';
 import { Title, Caption, Avatar, Icon} from 'react-native-paper';
+import { FlatList } from 'react-native';
+import { Image } from 'react-native';
 
 export default function TabTwoScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.userInfoSection}>
-        <View style={{flexDirection:'row', marginTop: 15}}>
+        <View style={{marginTop: 15, backgroundColor:"#F6ECDC", alignItems:'center'}}>
           <Avatar.Image
             source={require('../(tabs)/longhorn.jpg')}
-            size={80}
+            size={125}
           />
-          <View style={{marginLeft:20}}>
-            <Title style={[styles.title, {marginTop:15, marginBottom:5}]}>Bevo</Title>
-            <Caption style={styles.caption}>@BevoFromUT</Caption>
+          <View style={{marginLeft:20,backgroundColor:"#F6ECDC"}}>
+            <Title style={[styles.title, {marginTop:15, marginBottom:5,}]}>Bevo</Title>
+            <Caption style={styles.caption}>@UTMascot</Caption>
           </View>
+          <View style={styles.userInfoSection}>
+        <View style={[styles.row, {backgroundColor:"#F6ECDC", marginTop:20, alignContent:'center'}]}>
+          <Text style={{color:"#777777", marginLeft: 10, marginTop: 20}}>Austin, TX</Text>
+          <Text style={[styles.greenTextBubble, {marginLeft: 30, marginTop: 5, color: "#F6ECDC"}]}>Austinite</Text>
+          <Text style={[styles.textBubble, {color: "#F6ECDC", marginTop:5}]}>53 Friends</Text>
+        </View>
+        </View>
         </View>
       </View>
 
-      <View style={styles.userInfoSection}>
-        <View style={styles.row}>
-          <Text style={{color:"#777777", marginTop: 15, marginLeft: 10}}>Austin, TX</Text>
-          <Text style={[styles.greenTextBubble, {marginTop: 5}]}>Austinite</Text>
-          <Text style={styles.textBubble}>53 Friends</Text>
-        </View>
+      <View style = {[styles.row, {backgroundColor: "#f6ecdc"}]}>
+        <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: -30}}>Food →</Text>
+      </View>
+      <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
+          <Image style={styles.image} source={require('../../assets/images/carrot.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/fish.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/cake.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/burgerDrink.png')}/>
+      </View>
+
+      <View style = {[styles.row, {backgroundColor: "#f6ecdc"}]}>
+        <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: 25}}>Landmarks →</Text>
+      </View>
+      <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
+          <Image style={styles.image} source={require('../../assets/images/home.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/building.png')}/>
+      </View>
+
+      <View style = {[styles.row, {backgroundColor: "#f6ecdc"}]}>
+        <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: 25}}>Events →</Text>
+      </View>
+      <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
+          <Image style={styles.image} source={require('../../assets/images/trophy.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/cal.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/friends.png')}/>
       </View>
     </SafeAreaView>
   );
@@ -34,12 +62,13 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    alignContent: 'center',
+    backgroundColor: '#F6ECDC'
   },
   userInfoSection: {
     paddingHorizontal: 30,
     marginBottom: 25,
-    backgroundColor: '#fff'
+    backgroundColor: '#F6ECDC'
   },
   title: {
     fontSize: 24,
@@ -84,19 +113,28 @@ const styles = StyleSheet.create({
     lineHeight: 26,
   },
   textBubble: {
-    backgroundColor: '#777777',
+    backgroundColor: '#7E471B',
     borderRadius: 15,
-    padding: 10,
-    marginLeft: 0,
-    marginRight: 30,
+    padding: 15,
     overflow: 'hidden',
   }, 
   greenTextBubble: {
-    backgroundColor: 'green',
+    backgroundColor: '#357553',
     borderRadius: 15,
-    padding: 10,
+    padding: 15,
     marginLeft: 25,
     marginRight: 25,
     overflow: 'hidden'
+  },
+  itemContainer: {
+    flex: 1,
+    margin: 5,
+    alignItems: 'center',
+  },
+  image: {
+    opacity: 1,
+    width: 70,
+    height: 70,
+    backgroundColor: "#F6ECDC"
   },
 });

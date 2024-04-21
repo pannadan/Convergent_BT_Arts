@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "expo": "^50.0.15",
     "react-native-maps": "^1.13.0",
-    "react-native-paper": "^5.12.3"
+    "react-native-paper": "^5.12.3",
+    "typescript": "^5.3.0",
+    "@types/react": "~18.2.45"
   }
 }
