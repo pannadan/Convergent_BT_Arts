@@ -1,38 +1,182 @@
 [
-    {
-      "id": 1,
-      "latitude": 30.2672,
-      "longitude": -97.7431,
-      "title": "Texas State Capitol",
-      "image": "https://placehold.co/600x400"
-    },
-    {
-      "id": 2,
-      "latitude": 30.2747,
-      "longitude": -97.7404,
-      "title": "The University of Texas at Austin",
-      "image": "https://via.placeholder.com/300"
-    },
-    {
-      "id": 3,
-      "latitude": 30.2649,
-      "longitude": -97.7479,
-      "title": "Lady Bird Lake",
-      "image": "https://via.placeholder.com/300"
-    },
-    {
-      "id": 4,
-      "latitude": 30.2715,
-      "longitude": -97.7412,
-      "title": "6th Street",
-      "image": "https://via.placeholder.com/300"
-    },
-    {
-      "id": 5,
-      "latitude": 30.2690,
-      "longitude": -97.7493,
-      "title": "Zilker Park",
-      "image": "https://via.placeholder.com/300"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "latitude": 30.2710,
+    "longitude": -97.7410,
+    "title": "Texas State Capitol",
+    "image": "https://via.placeholder.com/300",
+    "description": "Iconic pink granite building housing the state legislature, with tours available.",
+    "type": "Landmark"
+  },
+  {
+    "id": 2,
+    "latitude": 30.2649,
+    "longitude": -97.7479,
+    "title": "Austin City Limits Live at The Moody Theater",
+    "image": "https://via.placeholder.com/300",
+    "description": "Famed venue hosting live music performances and the long-running TV show, Austin City Limits.",
+    "type": "Event"
+  },
+  {
+    "id": 3,
+    "latitude": 30.2712,
+    "longitude": -97.7459,
+    "title": "6th Street",
+    "image": "https://via.placeholder.com/300",
+    "description": "Vibrant entertainment district known for its live music, bars, and nightlife.",
+    "type": "Event"
+  },
+  {
+    "id": 4,
+    "latitude": 30.2500,
+    "longitude": -97.7500,
+    "title": "Barton Springs Pool",
+    "image": "https://via.placeholder.com/300",
+    "description": "Natural spring-fed pool offering a refreshing swim in the heart of Zilker Park.",
+    "type": "Landmark"
+  },
+  {
+    "id": 5,
+    "latitude": 30.2586,
+    "longitude": -97.7484,
+    "title": "Rainey Street Historic District",
+    "image": "https://via.placeholder.com/300",
+    "description": "Quaint neighborhood with bungalow-style bars and food trucks, popular for nightlife.",
+    "type": "Event"
+  },
+  {
+    "id": 6,
+    "latitude": 30.2444,
+    "longitude": -97.7688,
+    "title": "Zilker Park",
+    "image": "https://via.placeholder.com/300",
+    "description": "Expansive park featuring trails, sports fields, picnic areas, and the iconic Barton Springs Pool.",
+    "type": "Landmark"
+  },
+  {
+    "id": 7,
+    "latitude": 30.2437,
+    "longitude": -97.7588,
+    "title": "Peter Pan Mini Golf",
+    "image": "https://via.placeholder.com/300",
+    "description": "Quirky mini-golf course with whimsical and colorful obstacles, fun for all ages.",
+    "type": "Event"
+  },
+  {
+    "id": 8,
+    "latitude": 30.2471,
+    "longitude": -97.7500,
+    "title": "South Congress Avenue",
+    "image": "https://via.placeholder.com/300",
+    "description": "Famous street lined with eclectic shops, boutiques, restaurants, and live music venues.",
+    "type": "Landmark"
+  },
+  {
+    "id": 9,
+    "latitude": 30.2400,
+    "longitude": -97.7261,
+    "title": "Blues on the Green (Zilker Park)",
+    "image": "https://via.placeholder.com/300",
+    "description": "Popular summer concert series featuring local and national blues musicians in Zilker Park.",
+    "type": "Event"
+  },
+  {
+    "id": 10,
+    "latitude": 30.2590,
+    "longitude": -97.7391,
+    "title": "Austin Convention Center",
+    "image": "https://via.placeholder.com/300",
+    "description": "Large convention center hosting conferences, expos, and events throughout the year.",
+    "type": "Event"
+  },
+  {
+    "id": 11,
+    "latitude": 30.2522,
+    "longitude": -97.7195,
+    "title": "Lady Bird Lake Hike and Bike Trail",
+    "image": "https://via.placeholder.com/300",
+    "description": "Scenic trail circling Lady Bird Lake, popular for walking, running, and biking.",
+    "type": "Landmark"
+  },
+  {
+    "id": 12,
+    "latitude": 30.2655,
+    "longitude": -97.7517,
+    "title": "The Contemporary Austin - Laguna Gloria",
+    "image": "https://via.placeholder.com/300",
+    "description": "Historic site with art exhibitions, sculpture garden, and stunning views of Lake Austin.",
+    "type": "Landmark"
+  },
+  {
+    "id": 13,
+    "latitude": 30.2622,
+    "longitude": -97.7431,
+    "title": "Austin Food & Wine Festival",
+    "image": "https://via.placeholder.com/300",
+    "description": "Annual festival celebrating culinary talents with tastings, demonstrations, and events.",
+    "type": "Event"
+  },
+  {
+    "id": 14,
+    "latitude": 30.2629,
+    "longitude": -97.7366,
+    "title": "Threadgill's",
+    "image": "https://via.placeholder.com/300",
+    "description": "Classic Southern comfort food and live music in a cozy, retro setting.",
+    "type": "Food"
+  },
+  {
+    "id": 15,
+    "latitude": 30.2705,
+    "longitude": -97.7515,
+    "title": "Bullock Texas State History Museum",
+    "image": "https://via.placeholder.com/300",
+    "description": "Interactive museum showcasing Texas history, culture, and artifacts.",
+    "type": "Landmark"
+  },
+  {
+    "id": 16,
+    "latitude": 30.2521,
+    "longitude": -97.7501,
+    "title": "Congress Avenue Bridge (Bat Bridge)",
+    "image": "https://via.placeholder.com/300",
+    "description": "Famous bridge where bats emerge nightly at dusk during the warmer months.",
+    "type": "Landmark"
+  },
+  {
+    "id": 17,
+    "latitude": 30.2672,
+    "longitude": -97.7409,
+    "title": "ACL Live at The Moody Theater",
+    "image": "https://via.placeholder.com/300",
+    "description": "State-of-the-art venue hosting live music performances and televised events.",
+    "type": "Event"
+  },
+  {
+    "id": 18,
+    "latitude": 30.2598,
+    "longitude": -97.7614,
+    "title": "Terry Black's Barbecue",
+    "image": "https://via.placeholder.com/300",
+    "description": "Family-owned BBQ joint offering smoked meats, sides, and a casual dining atmosphere.",
+    "type": "Food"
+  },
+  {
+    "id": 19,
+    "latitude": 30.2690,
+    "longitude": -97.7365,
+    "title": "Paramount Theatre",
+    "image": "https://via.placeholder.com/300",
+    "description": "Historic theater showcasing films, live performances, and special events.",
+    "type": "Event"
+  },
+  {
+    "id": 20,
+    "latitude": 30.2650,
+    "longitude": -97.7398,
+    "title": "Freedmen's",
+    "image": "https://via.placeholder.com/300",
+    "description": "Upscale BBQ spot in a historic building, serving smoked meats and craft cocktails.",
+    "type": "Food"
+  }
+]

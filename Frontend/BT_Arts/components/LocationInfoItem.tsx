@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Button } from 'react-native';
+import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -10,16 +10,121 @@ const LocationInfoItem = ({location, navigation}) => {
     //const navigation = useNavigation()
   return (
     <View style={styles.card}> 
-        <View style={styles.title}>
-            <Text>{location.title}</Text>
+        <View style={styles.header}>
+            <Text style={styles.title}>{location.title}</Text>
+            <Text style={styles.locationType}>{location.type}</Text>
         </View>
-        <View style={styles.icons}>
-            <Button title="Find Groups" onPress={() => navigation.navigate('Groups')} />            
-            <FontAwesome name='building' color="green" size={24} />
-            <FontAwesome name='camera' color="grey" size={24} />
 
+        <View style={styles.icons}>
+                <Pressable onPress={() => navigation.navigate('Groups')} style={styles.button}>
+                    <Text style={styles.buttonText}>
+                        Find Groups
+                    </Text>
+                </Pressable>            
+            <FontAwesome name='building' color="green" size={24} />
+            <View style={styles.cameraButton}>
+                <FontAwesome name='camera' color="grey" size={24} />
+            </View>
         </View>
-        <View style={styles.locationInfo}>
+        <View style={styles.image}>
+            <Image source={{ uri: location.image }} style={styles.image} />
+        </View>
+        <View style={styles.footer}>
+            <Text>
+                {location.description}
+            </Text>
+        </View>
+        
+        
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+    card: {
+        backgroundColor: '#f6ECDC',
+        position: 'absolute',
+        bottom: 20,
+        left: 10,
+        right: 10, 
+        borderRadius: 20,
+        borderColor: 'black',
+        borderWidth: 1,
+        flexDirection: 'column'
+    },
+
+    header: {
+        alignItems: 'baseline',
+        flexDirection: 'row',
+        marginHorizontal: 20,
+    },
+    title: {
+        marginTop: 15,
+        marginRight: 10,
+        fontSize: 23,
+        fontWeight: 'bold',
+        width: 250
+    },
+    locationType: {
+        fontStyle: 'italic',
+        marginLeft: 'auto',
+
+    },
+
+    icons: {
+        flexDirection: 'row',
+        marginHorizontal: 20,
+        alignItems: 'center',
+    },
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 5,
+        width: 130,
+        borderRadius: 20,
+        elevation: 3,
+        backgroundColor: '#991f1f',
+        height: 30,
+        marginRight: 20,
+
+    },
+    buttonText: {
+        fontSize: 12,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+    },
+    cameraButton: {
+        marginLeft: 'auto',
+    },
+
+    image: {
+        marginVertical: 3,
+        marginHorizontal: 10,
+        width: null,
+        height: 120,
+        borderRadius: 20,
+        overflow: 'hidden',
+        flex: 1,
+    },
+    
+    footer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between', //!!! THIS NOT WORKING
+        marginTop: 5,
+        marginHorizontal: 20,
+        marginBottom: 20,
+    },
+    
+})
+
+export default LocationInfoItem
+
+
+
+/*
+<View style={styles.locationInfo}>
             <Image source={{ uri: location.image }} style={styles.image} />
             <View style={styles.rightContainer}>
                 <Text>This is information about the location!</Text>
@@ -29,53 +134,4 @@ const LocationInfoItem = ({location, navigation}) => {
                 </View>
             </View>
         </View>
-        
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-    card: {
-        backgroundColor: 'white',
-        position: 'absolute',
-        bottom: 20,
-        padding: 10,
-        left: 10,
-        right: 10, 
-        borderRadius: 20,
-
-        flexDirection: 'column'
-        
-    },
-    icons: {
-        flexDirection: 'row',
-        margin: 10,
-        justifyContent: 'space-between',
-
-    },
-    title: {
-        margin: 0,
-        textAlign: 'center',
-    },
-    image: {
-        width: 150,
-        aspectRatio: 1,
-        borderRadius: 20,
-        overflow: 'hidden',
-    },
-    rightContainer: {
-        padding: 5,
-        flex: 1,
-
-    },
-    footer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between', //!!! THIS NOT WORKING
-        marginTop: 'auto',
-    },
-    locationInfo: {
-        flexDirection: 'row',
-    }
-})
-
-export default LocationInfoItem
+*/

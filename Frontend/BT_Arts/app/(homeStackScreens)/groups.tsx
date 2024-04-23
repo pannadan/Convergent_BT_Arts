@@ -8,7 +8,6 @@ export default function Groups() {
   return (
     <View style={styles.container}>
         
-        <Text style={styles.title}>this is the groups screen</Text>
         <FlatList 
             style={styles.partyList}
             data={parties} 
