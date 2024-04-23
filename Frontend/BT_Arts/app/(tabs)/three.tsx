@@ -12,7 +12,7 @@ export default function TabTwoScreen() {
       <View style={styles.userInfoSection}>
         <View style={{marginTop: 15, backgroundColor:"#F6ECDC", alignItems:'center'}}>
           <Avatar.Image
-            source={require('../(tabs)/longhorn.jpg')}
+            source={require('../../assets/images/longhorn.jpg')}
             size={125}
           />
           <View style={{marginLeft:20,backgroundColor:"#F6ECDC"}}>
@@ -33,27 +33,30 @@ export default function TabTwoScreen() {
         <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: -30}}>Food →</Text>
       </View>
       <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
-          <Image style={styles.image} source={require('../../assets/images/carrot.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/fish.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/cake.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/burgerDrink.png')}/>
+          <Image style={styles.image} source={require('../../assets/images/Ramen.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Pizza.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Taco.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Coffee.png')}/>
       </View>
 
       <View style = {[styles.row, {backgroundColor: "#f6ecdc"}]}>
         <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: 25}}>Landmarks →</Text>
       </View>
       <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
-          <Image style={styles.image} source={require('../../assets/images/home.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/building.png')}/>
+          <Image style={styles.image} source={require('../../assets/images/UTTower.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Longhorn.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Capitol.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/ATXSign.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Person.png')}/>
       </View>
 
       <View style = {[styles.row, {backgroundColor: "#f6ecdc"}]}>
         <Text style={{color:"#000", marginLeft:30, fontSize: 16, marginTop: 25}}>Events →</Text>
       </View>
       <View style={{flexDirection:'row', marginLeft: 30, backgroundColor: "#f6ecdc"}}>
-          <Image style={styles.image} source={require('../../assets/images/trophy.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/cal.png')}/>
-          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/friends.png')}/>
+          <Image style={styles.image} source={require('../../assets/images/MeetFriends.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Karaoke.png')}/>
+          <Image style={[styles.image, {marginLeft: 10}]} source={require('../../assets/images/Painting.png')}/>
       </View>
     </SafeAreaView>
   );
@@ -133,8 +136,8 @@ const styles = StyleSheet.create({
   },
   image: {
     opacity: 1,
-    width: 70,
-    height: 70,
+    width: 60,
+    height: 75,
     backgroundColor: "#F6ECDC"
   },
 });
