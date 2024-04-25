@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Button } from 'react-native'
+import { View, Text, StyleSheet, Image, Button, Alert } from 'react-native'
 import React from 'react'
 import { FlipInEasyX } from 'react-native-reanimated'
 
@@ -13,7 +13,7 @@ const PartyCard = ({parties}) => {
         <View style={styles.rightbox}>
             <Text>{parties.date_time}</Text>
         </View>
-        <Button title="Join" />
+        <Button title="Join" onPress={() => Alert.alert('Congratulations!', 'You have joined Ethan\'s Party!')}/>
     </View>
   )
 }

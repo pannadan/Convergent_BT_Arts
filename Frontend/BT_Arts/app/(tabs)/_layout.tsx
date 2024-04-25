@@ -66,7 +66,15 @@ export default function TabLayout() {
       <Tabs.Screen
         name="three"
         options={{
-          title: 'Me',
+          title: 'My Profile',
+          tabBarIcon: ({ color }) => <TabBarIcon2 name="hat-cowboy" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ChatStack"
+        options={{
+          headerShown: false,
+          title: 'Messages',
           tabBarIcon: ({ color }) => <TabBarIcon2 name="hat-cowboy" color={color} />,
         }}
       />

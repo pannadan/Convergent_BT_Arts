@@ -3,6 +3,7 @@ import React from 'react';
 import parties from '@/assets/data/groups.json';
 import PartyCard from '@/components/partyCard';
 import { FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Groups() {
   return (

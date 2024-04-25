@@ -13,6 +13,6 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ],
+, "styles/MessageStyles.js"  ],
   "allowImportingTsExtensions": true,
 }
