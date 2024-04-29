@@ -2,7 +2,7 @@ import React from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable } from 'react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5,  FontAwesome6 } from '@expo/vector-icons';
 import HomeStack from '@/app/(tabs)/HomeStack'
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -29,9 +29,19 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: '#FFFFFF',
         // Disable the static render of the header on web
         // to prevent a hydration error in React Navigation v6.
+        tabBarStyle: {
+          backgroundColor: '#d8a46d', // Directly set your custom color here
+        },
+        headerStyle: {
+          backgroundColor: '#d79957', // Set the background color for all headers
+        },
+        headerTintColor: '#FFFFFF', // Set the color of the header title and icons
+        headerTitleStyle: {
+          fontWeight: 'bold', // Optional: adjust the font weight of the header title
+        },
         headerShown: useClientOnlyValue(false, true),
       }}>
       <Tabs.Screen
@@ -39,35 +49,14 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'Home',
-          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-          // headerRight: () => (
-          //   <Link href="/modal" asChild>
-          //     <Pressable>
-          //       {({ pressed }) => (
-          //         <FontAwesome
-          //           name="info-circle"
-          //           size={25}
-          //           color={Colors[colorScheme ?? 'light'].text}
-          //           style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-          //         />
-          //       )}
-          //     </Pressable>
-          //   </Link>
-          // ),
-        }}
-      />
-      <Tabs.Screen
-        name="two"
-        options={{
-          title: 'Camera',
-          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome5 name="home" size={24} color="white" style={{ marginBottom: -10}}/>,
         }}
       />
       <Tabs.Screen
         name="three"
         options={{
           title: 'My Profile',
-          tabBarIcon: ({ color }) => <TabBarIcon2 name="hat-cowboy" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome5 name="hat-cowboy" size={24} color="white" style={{ marginBottom: -10 }}/>,
         }}
       />
       <Tabs.Screen
@@ -75,7 +64,7 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'Messages',
-          tabBarIcon: ({ color }) => <TabBarIcon2 name="hat-cowboy" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome6 name="message" size={24} color="white" style={{ marginBottom: -10 }}/>,
         }}
       />
     </Tabs>

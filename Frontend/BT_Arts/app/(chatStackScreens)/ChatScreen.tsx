@@ -35,7 +35,7 @@ const ChatScreen = () => {
             name="send-circle"
             style={{ marginBottom: 5, marginRight: 5 }}
             size={32}
-            color="#2e64e5"
+            color="#D79957"
           />
         </View>
       </Send>
@@ -48,7 +48,7 @@ const ChatScreen = () => {
         {...props}
         wrapperStyle={{
           right: {
-            backgroundColor: '#2e64e5',
+            backgroundColor: '#D79957',
           },
         }}
         textStyle={{
@@ -89,6 +89,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#f6ECDC',
+    backgroundColor: '#D79957',
   },
 });

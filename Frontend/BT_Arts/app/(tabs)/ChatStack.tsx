@@ -7,7 +7,12 @@ const Stack = createNativeStackNavigator();
 
 function ChatStack() {
   return (
-    <Stack.Navigator initialRouteName='Chats'>
+    <Stack.Navigator initialRouteName='Chats' screenOptions={{headerStyle: {backgroundColor: '#d79957', },
+    headerTintColor: '#FFFFFF', // Set the color of the header title and icons
+    headerTitleStyle: {
+      fontWeight: 'bold', // Optional: adjust the font weight of the header title
+    },
+  }}>
       <Stack.Screen name="ChatScreen" component={ChatScreen} options= {{title: 'Ishaan\'s Group UT Tower'}}/>
       <Stack.Screen  name="Chats" component={MessagesScreen} options= {{title: 'Stamp Chat'}}/>
     </Stack.Navigator>
