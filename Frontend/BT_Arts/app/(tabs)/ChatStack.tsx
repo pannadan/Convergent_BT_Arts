@@ -8,8 +8,8 @@ const Stack = createNativeStackNavigator();
 function ChatStack() {
   return (
     <Stack.Navigator initialRouteName='Chats'>
-      <Stack.Screen name="ChatScreen" component={ChatScreen} />
-      <Stack.Screen  name="Chats" component={MessagesScreen} />
+      <Stack.Screen name="ChatScreen" component={ChatScreen} options= {{title: 'Ishaan\'s Group UT Tower'}}/>
+      <Stack.Screen  name="Chats" component={MessagesScreen} options= {{title: 'Stamp Chat'}}/>
     </Stack.Navigator>
   );
 }

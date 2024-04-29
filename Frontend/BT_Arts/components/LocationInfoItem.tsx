@@ -8,7 +8,11 @@ import React from 'react'
 
 const LocationInfoItem = ({location, navigation}) => {
     //const navigation = useNavigation()
-  return (
+
+
+    
+
+    return (
     <View style={styles.card}> 
         <View style={styles.header}>
             <Text style={styles.title}>{location.title}</Text>
@@ -16,14 +20,21 @@ const LocationInfoItem = ({location, navigation}) => {
         </View>
 
         <View style={styles.icons}>
-                <Pressable onPress={() => navigation.navigate('Groups')} style={styles.button}>
-                    <Text style={styles.buttonText}>
-                        Find Groups
-                    </Text>
-                </Pressable>            
-            <FontAwesome name='building' color="green" size={24} />
+            <Pressable onPress={() => navigation.navigate('Groups')} style={styles.button}>
+                <Text style={styles.buttonText}>
+                    Find Groups
+                </Text>
+            </Pressable> 
+            <View>
+                <Image style={styles.stamp} source={{uri: location.stampimg}}/>
+            </View>
+            
+            
+            {/* <FontAwesome name='building' color="green" size={24} /> */}
             <View style={styles.cameraButton}>
-                <FontAwesome name='camera' color="grey" size={24} />
+                <Pressable onPress={() => navigation.navigate('Camera')}>
+                    <FontAwesome name='camera' color="grey" size={24} />
+                </Pressable>
             </View>
         </View>
         <View style={styles.image}>
@@ -97,6 +108,12 @@ const styles = StyleSheet.create({
     },
     cameraButton: {
         marginLeft: 'auto',
+    },
+    stamp: {
+        height: 40,
+        width: 40,
+        opacity: 1,
+        overflow: 'visible',
     },
 
     image: {

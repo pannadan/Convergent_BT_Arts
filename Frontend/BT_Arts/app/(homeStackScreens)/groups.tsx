@@ -4,6 +4,7 @@ import parties from '@/assets/data/groups.json';
 import PartyCard from '@/components/partyCard';
 import { FlatList } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Image } from 'react-native';
 
 export default function Groups() {
   return (
@@ -38,5 +39,9 @@ const styles = StyleSheet.create({
     title: {
         justifyContent: 'center',
         margin: 20,
+    },
+    image: {
+        height: 30,
+        width: 30
     }
 })

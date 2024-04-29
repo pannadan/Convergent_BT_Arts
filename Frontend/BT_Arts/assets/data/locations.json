@@ -6,7 +6,8 @@
     "title": "Texas State Capitol",
     "image": "https://via.placeholder.com/300",
     "description": "Iconic pink granite building housing the state legislature, with tours available.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "title": "Austin City Limits Live at The Moody Theater",
     "image": "https://via.placeholder.com/300",
     "description": "Famed venue hosting live music performances and the long-running TV show, Austin City Limits.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "title": "6th Street",
     "image": "https://via.placeholder.com/300",
     "description": "Vibrant entertainment district known for its live music, bars, and nightlife.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "title": "Barton Springs Pool",
     "image": "https://via.placeholder.com/300",
     "description": "Natural spring-fed pool offering a refreshing swim in the heart of Zilker Park.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "title": "Rainey Street Historic District",
     "image": "https://via.placeholder.com/300",
     "description": "Quaint neighborhood with bungalow-style bars and food trucks, popular for nightlife.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "title": "Zilker Park",
     "image": "https://via.placeholder.com/300",
     "description": "Expansive park featuring trails, sports fields, picnic areas, and the iconic Barton Springs Pool.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "title": "Peter Pan Mini Golf",
     "image": "https://via.placeholder.com/300",
     "description": "Quirky mini-golf course with whimsical and colorful obstacles, fun for all ages.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "title": "South Congress Avenue",
     "image": "https://via.placeholder.com/300",
     "description": "Famous street lined with eclectic shops, boutiques, restaurants, and live music venues.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "title": "Blues on the Green (Zilker Park)",
     "image": "https://via.placeholder.com/300",
     "description": "Popular summer concert series featuring local and national blues musicians in Zilker Park.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "title": "Austin Convention Center",
     "image": "https://via.placeholder.com/300",
     "description": "Large convention center hosting conferences, expos, and events throughout the year.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "title": "Lady Bird Lake Hike and Bike Trail",
     "image": "https://via.placeholder.com/300",
     "description": "Scenic trail circling Lady Bird Lake, popular for walking, running, and biking.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "title": "The Contemporary Austin - Laguna Gloria",
     "image": "https://via.placeholder.com/300",
     "description": "Historic site with art exhibitions, sculpture garden, and stunning views of Lake Austin.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "title": "Austin Food & Wine Festival",
     "image": "https://via.placeholder.com/300",
     "description": "Annual festival celebrating culinary talents with tastings, demonstrations, and events.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "title": "Threadgill's",
     "image": "https://via.placeholder.com/300",
     "description": "Classic Southern comfort food and live music in a cozy, retro setting.",
-    "type": "Food"
+    "type": "Food",
+    "stampimg": ""
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "title": "Bullock Texas State History Museum",
     "image": "https://via.placeholder.com/300",
     "description": "Interactive museum showcasing Texas history, culture, and artifacts.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "title": "Congress Avenue Bridge (Bat Bridge)",
     "image": "https://via.placeholder.com/300",
     "description": "Famous bridge where bats emerge nightly at dusk during the warmer months.",
-    "type": "Landmark"
+    "type": "Landmark",
+    "stampimg": ""
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "title": "ACL Live at The Moody Theater",
     "image": "https://via.placeholder.com/300",
     "description": "State-of-the-art venue hosting live music performances and televised events.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "title": "Terry Black's Barbecue",
     "image": "https://via.placeholder.com/300",
     "description": "Family-owned BBQ joint offering smoked meats, sides, and a casual dining atmosphere.",
-    "type": "Food"
+    "type": "Food",
+    "stampimg": ""
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "title": "Paramount Theatre",
     "image": "https://via.placeholder.com/300",
     "description": "Historic theater showcasing films, live performances, and special events.",
-    "type": "Event"
+    "type": "Event",
+    "stampimg": ""
   },
   {
     "id": 20,
@@ -177,6 +196,107 @@
     "title": "Freedmen's",
     "image": "https://via.placeholder.com/300",
     "description": "Upscale BBQ spot in a historic building, serving smoked meats and craft cocktails.",
-    "type": "Food"
+    "type": "Food",
+    "stampimg": ""
+  },
+  {
+    "id": 21,
+    "latitude": 30.2862,
+    "longitude": -97.7394,
+    "title": "UT Tower",
+    "image": "https://news.utexas.edu/wp-content/uploads/2018/10/tower_from_the_north_with_trees_2014672.jpg", 
+    "description": "The center of UT's campus and an enduring symbol of the University since it opened almost a century ago.",
+    "type": "Landmark",
+    "stampimg": "https://drive.google.com/uc?id=10nggB-wCXEWpsW_LjLMIUXxzsE81AG2j"
+  },
+  {
+    "id": 22,
+    "latitude": 30.29578,
+    "longitude": -97.74419,
+    "title": "Cabo Bob's",
+    "image": "https://cabobobs.com/wp-content/uploads/2021/08/cabo-social-1.png",
+    "description": "Cabo Bob's is a build-your-own burrito restaurant offering burritos, tacos, nachos, bowls, salads, and quesadillas",
+    "type": "Food",
+    "stampimg": "https://drive.google.com/uc?id=1XXos_w4A59nd3KTCcbgAR86WttaTFzxk"
+  },
+  {
+    "id": 23,
+    "latitude": 30.28364,
+    "longitude": -97.73276,
+    "title": "UT Graduation",
+    "image": "https://cns.utexas.edu/sites/default/files/uploads/images/default/texas_grad_cap.jpg",
+    "description": "Students at UT Austin are going to graduate!",
+    "type": "Event",
+    "stampimg": "https://drive.google.com/uc?id=1U2KXNEFUG9k8-HJacB3EeyZnBr-5qkqpk"
+  },
+  {
+    "id": 24,
+    "latitude": 30.288,
+    "longitude": -97.742,
+    "title": "Dobie Mall",
+    "image": "https://do512.com/pages/content_media/images/dobie.png",
+    "description": "UT's on-campus dormitory",
+    "type": "Landmark",
+    "stampimg": ""
+  },
+  {
+    "id": 25,
+    "latitude": 30.286,
+    "longitude": -97.743,
+    "title": "Torchy's Tacos",
+    "image": "https://pbs.twimg.com/media/DK7Y8A-UQAAapPa.jpg",
+    "description": "Iconic Austin taco joint",
+    "type": "Food",
+    "stampimg": ""
+  },
+  {
+    "id": 26,
+    "latitude": 30.290,
+    "longitude": -97.743,
+    "title": "Caffe Medici",
+    "image": "https://www.caffemedici.com/wp-content/uploads/2020/01/CM_Downtown_Austin_Driftwood-1024x684.jpg",
+    "description": "Coffee shop with several locations in Austin",
+    "type": "Food",
+    "stampimg": ""
+  },
+  {
+    "id": 27,
+    "latitude": 30.2879,
+    "longitude": -97.746,
+    "title": "Kerbey Lane Cafe",
+    "image": "https://s3.amazonaws.com/sfc-wordpress-content-prod/wp-content/uploads/2019/11/02171659/kerbey-lane-cafe.jpg",
+    "description": "Local diner famous for its pancakes",
+    "type": "Food",
+    "stampimg": ""
+  },
+  {
+    "id": 28,
+    "latitude": 30.284,
+    "longitude": -97.74294,
+    "title": "Dirty Sixth",
+    "image": "https://media.istockphoto.com/photos/famous-sixth-street-in-downtown-austin-texas-at-night-picture-id1157476254?k=20&m=1157476254&s=612x612&w=0&h=7RiykJ-7iJxZB-BS2wudjbb23hREepMOG8mnzR_7Njk=",
+    "description": "A street famous for its bars and nightlife",
+    "type": "Event",
+    "stampimg": ""
+  },
+  {
+    "id": 29,
+    "latitude": 30.29345,
+    "longitude": -97.73878,
+    "title": "Kinsolving Dormitory",
+    "image": "https://i.pinimg.com/originals/90/4f/f0/904ff0cd9d15776a217937a6be352139.jpg",
+    "description": "One of UT's on-campus dormitories",
+    "type": "Landmark",
+    "stampimg": ""
+  },
+  {
+    "id": 30,
+    "latitude": 30.2845,
+    "longitude": -97.745,
+    "title": "Gregory Gymnasium",
+    "image": "https://texasexes.org/news/wp-content/uploads/2019/06/texas_union-768x427.jpg",
+    "description": "UT's gymnasium",
+    "type": "Landmark",
+    "stampimg": ""
   }
 ]

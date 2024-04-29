@@ -5,7 +5,7 @@ import { FlipInEasyX } from 'react-native-reanimated'
 const PartyCard = ({parties}) => {
   return (
     <View style={styles.card}>
-        <Image source={{ uri: parties.profile_icon }} style={styles.image} />
+        <Image source={require('../assets/images/UTTower.png')} style={styles.image} />
         <View style={styles.nameandnum}>
             <Text>{parties.group_party_name}</Text>
             <Text>Party Size: {parties.number_of_people}</Text>
@@ -13,7 +13,7 @@ const PartyCard = ({parties}) => {
         <View style={styles.rightbox}>
             <Text>{parties.date_time}</Text>
         </View>
-        <Button title="Join" onPress={() => Alert.alert('Congratulations!', 'You have joined Ethan\'s Party!')}/>
+        <Button title="Join" onPress={() => Alert.alert('Congratulations!', 'You have joined Ishaan\'s Party!')}/>
     </View>
   )
 }
@@ -29,16 +29,16 @@ const styles = StyleSheet.create({
         padding: 10
     },
     image: {
-        width: 50,
-        aspectRatio: 1,
-        borderRadius: 50,
-        overflow: 'hidden',
+        width: 60,
+        height: 68,
+        borderRadius: 0,
+        overflow: 'visible',
     },
     nameandnum: {
         flex: 1,
         justifyContent: 'center',
         marginHorizontal: 10,
-        //alignItems: 'center',
+        // alignItems: 'left',
 
     },
     rightbox: {

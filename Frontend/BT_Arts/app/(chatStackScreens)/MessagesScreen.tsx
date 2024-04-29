@@ -16,40 +16,40 @@ import {
 const Messages = [
   {
     id: '1',
-    userName: 'Ethan\'s Group',
-    userImg: "https://via.placeholder.com/300",
+    userName: 'Ishaan\'s Group',
+    userImg: require('../../assets/images/UTTower.png'),
     messageTime: '4 mins ago',
     messageText:
       'Hey there, so excited to meet y\'all!.',
   },
   {
     id: '2',
-    userName: 'John\'s Group',
-    userImg: "https://via.placeholder.com/300",
+    userName: 'Surya\'s Group',
+    userImg: require('../../assets/images/Taco.png'),
     messageTime: '2 hours ago',
     messageText:
       'Is there a dress code?',
   },
   {
     id: '3',
-    userName: 'Ken\'s Group',
-    userImg: "https://via.placeholder.com/300",
+    userName: 'Akshitha\'s Group',
+    userImg: require('../../assets/images/Painting.png'),
     messageTime: '1 hours ago',
     messageText:
       'Anyone need a ride?',
   },
   {
     id: '4',
-    userName: 'Christy\'s Group',
-    userImg: "https://via.placeholder.com/300",
+    userName: 'Aayush\'s Group',
+    userImg: require('../../assets/images/Concert.png'),
     messageTime: '1 day ago',
     messageText:
       'What are y\'all planning on bringing?',
   },
   {
     id: '5',
-    userName: 'Alex\'s Group',
-    userImg: "https://via.placeholder.com/300",
+    userName: 'Andrea\'s Group',
+    userImg: require('../../assets/images/Coffee.png'),
     messageTime: '2 days ago',
     messageText:
       'Is it ok if I bring a friend?',
@@ -58,7 +58,7 @@ const Messages = [
 
 const MessagesScreen = ({navigation}) => {
     return (
-      <Container>
+      <Container style={styles.container}>
         <FlatList 
           data={Messages}
           keyExtractor={item=>item.id}
@@ -66,7 +66,7 @@ const MessagesScreen = ({navigation}) => {
             <Card onPress={() => navigation.navigate('ChatScreen', {userName: item.userName})}>
               <UserInfo>
                 <UserImgWrapper>
-                  <UserImg source={item.userImg} />
+                  <UserImg style={styles.UserImg}source={item.userImg} />
                 </UserImgWrapper>
                 <TextSection>
                   <UserInfoText>
@@ -89,6 +89,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     alignItems: 'center', 
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: '#f6ECDC',
   },
+  UserImg: {
+    height: 60,
+    width: 48,
+    borderRadius: -10,
+    overflow: 'visible'
+  }
 });
